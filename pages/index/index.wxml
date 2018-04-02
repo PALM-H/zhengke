@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="page">
   <view class="header">
-    <image class="logo" src="../../images/logo.png" background-size="cover"  bindtap="clickTest"></image>
+    <image class="logo" src="../../images/logo.png" mode="aspectFill"  bindtap="clickTest"></image>
     <text class="title">挣客小程序</text>
     <text class="subtitle">商城平台</text>
     <view class="attestation">

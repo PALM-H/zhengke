@@ -3,7 +3,7 @@
   <view class="article-wrap">
     <view class="title">
       <!--<text selectable>{{title}}</text>-->
-      <rich-text selectable nodes="{{title}}" bindtap="tap"></rich-text> 
+       <rich-text selectable nodes="{{title}}" bindtap="tap"></rich-text>  
     </view>
     <view class="user">
       <text>{{user}}　{{time}}</text>

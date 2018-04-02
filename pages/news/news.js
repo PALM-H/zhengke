@@ -2,17 +2,20 @@
 
 Page({
   data: {
+    //tab
 		tabs: [],
     tabWidth: 750,
 		activeIndex: 0,
-    imgUrls: [
 
-    ],
+    //carousel
+    imgUrls: [],//banner
     indicatorDots: false,
     autoplay: true,
     interval: 4000,
     duration: 500,
 		swiperCurrent: 0,
+
+    //list
 		itemArr: [
 			
 		]
@@ -32,6 +35,7 @@ Page({
         page: 1
       },
       success: function(res) {
+        console.log(res,'345435435435345tabTitle')
         that.setData({
           tabs: res.data.info.list,
           tabWidth: res.data.info.list.length*120+120
@@ -57,6 +61,7 @@ Page({
 				cid: id
       },
       success: function(res) {
+        console.log(res,'3463253425article')
         that.setData({
           itemArr: res.data.info.list,
 					imgUrls: res.data.banner_list
