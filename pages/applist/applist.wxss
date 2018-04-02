@@ -1,0 +1,44 @@
+/**applist.wxss**/
+.page{
+  overflow: hidden;
+}
+.itemwrap{
+  position: relative;
+  width: 670rpx;
+  margin: 40rpx auto;
+  border-radius: 16rpx;
+  box-shadow: 0 0 30rpx #dee3f2;
+}
+.itemwrap .sign{
+  position: absolute;
+  top: 37rpx;
+  left: 40rpx;
+  width: 42rpx;
+  height: 39rpx;
+}
+.itemwrap .price{
+  display: block;
+  padding-top: 20rpx;
+  margin-left: 100rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+.rulewrap{
+  padding: 20rpx 40rpx;
+  line-height:54rpx;
+}
+.rulewrap text{
+  display: block;
+  font-size: 30rpx;
+}
+.rulewrap text.normai{
+  display: block;
+  font-size: 30rpx;
+  color: #4a4a4a;
+}
+.rulewrap text.blue{
+  display: block;
+  font-size: 30rpx;
+  color: #0080ff;
+}

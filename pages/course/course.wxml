@@ -1,0 +1,11 @@
+<!--course.wxml-->
+<view class="page">
+	<view class="coursewrap">
+        <text>1.先检查微信是否为最新版本。选择右下角“我”，选择设置，点击关于微信，选择“检查最新版本，如果不是最新版本，按系统要求下载即可。</text>
+        <image src="https://www.znnkee.com/smallprogram/Public/Index/images/course-img1.jpg" />
+        <text>2.在切换到微信，点击“发现”，点击最底部的小程序，搜索任何一个小程序，这里以腾讯为例。</text>
+        <image src="https://www.znnkee.com/smallprogram/Public/Index/images/course-img2.jpg" />
+        <text>3.点击“腾讯视频”即可打开其小程序，搜索界面会记录使用历史。在“微信”页面向下拉也会出现最后使用的小程序。</text>
+        <image src="https://www.znnkee.com/smallprogram/Public/Index/images/course-img3.jpg" />
+    </view>
+</view>

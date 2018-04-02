@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news",
+    "pages/article/article",
+    "pages/buy/buy",
+    "pages/buysuccess/buysuccess",
+    "pages/sendmsg/sendmsg",
+    "pages/mine/mine",
+    "pages/applist/applist",
+    "pages/Invitecode/Invitecode",
+    "pages/course/course",
+    "pages/checkmsg/checkmsg",
+    "pages/mycoin/mycoin",
+    "pages/mycard/mycard",
+    "pages/addcard/addcard",
+    "pages/getcash/getcash",
+    "pages/cashexp/cashexp",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "挣客",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor": "#0080ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#eeeeee",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "iconPath":"images/shop.png",
+      "selectedIconPath":"images/shop-on.png",
+      "text":"门店"
+    },{
+      "pagePath":"pages/news/news",
+      "iconPath":"images/news.png",
+      "selectedIconPath":"images/news-on.png",
+      "text":"新闻"
+    },{
+      "pagePath":"pages/buy/buy",
+      "iconPath":"images/buy.png",
+      "selectedIconPath":"images/buy-on.png",
+      "text":"购买"
+    },{
+      "pagePath":"pages/mine/mine",
+      "iconPath":"images/mine.png",
+      "selectedIconPath":"images/mine-on.png",
+      "text":"我的"
+    }]
+  }
+}

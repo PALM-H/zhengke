@@ -1,0 +1,133 @@
+/**sendmsg.wxss**/
+
+.formwrap{
+	position: relative;
+	width: 670rpx;
+	margin: 40rpx auto;
+}
+.youmsgtext{
+	display: block;
+	margin-top: 40rpx;
+	font-size: 34rpx;
+	color: #4a4a4a;
+}
+.formwrap input{
+	width: 100%;
+	height: 94rpx;
+	line-height: 94rpx;
+	border: 1rpx solid #9b9b9b;
+	font-size: 30rpx;
+	color: #4a4a4a;
+	margin-top: 40rpx;
+	padding-left: 40rpx;
+	box-sizing: border-box;
+	border-radius: 10rpx;
+}
+.signwrap{
+	position: relative;
+	width: 100%;
+	height: 146rpx;
+	margin-top: 40rpx;
+	border-radius: 10rpx;
+	background: linear-gradient(to right, #A426FB , #1FA0F6);
+}
+.signwrap image{
+	position: absolute;
+	width: 44rpx;
+	height: 44rpx;
+	left: 40rpx;
+	top: 56rpx;
+}
+.signwrap .price{
+	position: absolute;
+	font-size: 48rpx;
+	color: #ffffff;
+	left: 100rpx;
+	top: 44rpx;
+}
+.signwrap .tips{
+	position: absolute;
+	width: 190rpx;
+	font-size: 20rpx;
+	color: #ffffff;
+	right: 40rpx;
+	top: 46rpx;
+}
+.youbuymsgtext{
+	display: block;
+	margin-top: 80rpx;
+	font-size: 34rpx;
+	color: #4a4a4a;
+}
+.uploadimg{
+	width: 100%;
+	height: 94rpx;
+	line-height: 94rpx;
+	border: 1rpx solid #9b9b9b;
+	font-size: 30rpx;
+	color: #9b9b9b;
+	margin-top: 40rpx;
+	padding-left: 40rpx;
+	box-sizing: border-box;
+	border-radius: 10rpx;
+}
+.preview{
+	margin-top: 40rpx;
+	width: 100%;
+}
+.preview image{
+	width: 100%;
+	border-radius: 10rpx;
+}
+
+.submit{
+	margin-top: 40rpx;
+	color: #ffffff;
+	background: linear-gradient(to right, #0080ff , #00b6ff);
+}
+.submit.disabled{
+	background: linear-gradient(to right, #9b9b9b , #9b9b9b);
+}
+
+.black-shade{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  background: #000000;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.success{
+  position: fixed;
+  width: 540rpx;
+  left: 50%;
+  top: 50%;
+  border-radius: 20rpx;
+  padding: 64rpx 0;
+  background: #ffffff;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+}
+.success .successwrap{
+  position: relative;
+  width: 100%;
+}
+.successwrap .sign{
+  width: 100%;
+  text-align: center;
+}
+.successwrap .sign image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.successwrap .successtext{
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.successwrap .successtext text{
+  font-size: 30rpx;
+  color: #4a4a4a;
+}

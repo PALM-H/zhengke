@@ -1,0 +1,12 @@
+<!--Invitecode.wxml-->
+<view class="page">
+	<view class="invitewrap">
+		<image class="signimg" src="../../images/invite.png" />
+		<text class="titletext">您的邀请码为</text>
+		<view class="invitecode">
+			<text selectable>{{code}}</text>
+		</view>
+		<text class="leadtext">长按邀请码复制</text>
+		<text class="tipstext">给朋友发送邀请码购买小程序，您将获得金币</text>
+	</view>
+</view>

@@ -1,0 +1,20 @@
+<!--buysuccess.wxml-->
+<view class="page">
+	<view class="success">
+		<view class="successwrap">
+			<view class="signwrap">
+				<image src="../../images/success-lg.png"></image>
+			</view>
+			<view class="alert">
+				<view class="alertwrap">
+					<image src="{{imgurl}}"></image>
+					<text class="price">{{price}}</text>
+					<text class="tips">已成功购买</text>
+					<view class="viewbtn" bindtap="toWriteMsg">
+						<text>前往填写资料</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

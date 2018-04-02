@@ -1,0 +1,51 @@
+<!--sendmsg.wxml-->
+<view class="page">
+	<view class="formwrap">
+		<text class="youmsgtext">你的信息</text>
+		<input type="text" placeholder="姓名" bindinput="bindName" maxlength="6" value="{{name}}" />
+		<input type="number" placeholder="电话" maxlength="11" bindinput="bindPhone" value="{{phone}}"/>
+		<view class="signwrap">
+			<image src="../../images/buy-item{{ typeOf(orderMsg.type) == undefined? 1 : orderMsg.type}}.png" />
+    	<text class="price">{{orderMsg.name}}</text>
+    	<text wx:if="{{orderMsg.type == 1}}" class="tips">注:此版本适合未注册小程序的用户购买</text>
+    	<text wx:if="{{orderMsg.type == 2}}" class="tips">注:此版本适合已经注册小程序的用户购买</text>
+		</view>
+		<text class="youbuymsgtext">购买信息</text>
+		<input type="text" placeholder="邮箱（建议用企业邮箱）" bindinput="bindEmail" maxlength="40" value="{{email}}"/>
+		<input type="number" placeholder="电话（建议用法人/总经理/股东的手机）" maxlength="11" bindinput="bindLeadPhone" value="{{leadPhone}}"/>
+		<input type="text" placeholder="联系地址" bindinput="bindAddress" maxlength="30" value="{{address}}"/>
+		<input type="text" placeholder="账号（小程序账户名）" bindinput="bindCount" maxlength="20" value="{{count}}"/>
+		<input type="text" password placeholder="密码" bindinput="bindPassword" maxlength="16"/>
+		<input type="text" password placeholder="确认密码" bindinput="bindRePassword" maxlength="16"/>
+		<block wx:if="{{orderMsg.type == 2}}">
+			<input type="idcard" placeholder="身份证（建议用法人/总经理/股东的身份证）" bindinput="bindIdCode" maxlength="18" value="{{idCode}}"/>
+			<input type="text" placeholder="微信号" bindinput="bindWechat" maxlength="20" value="{{wechat}}"/>
+			<input type="text" placeholder="银行账户（公司对公账号）" bindinput="bindBank" maxlength="19" value="{{bank}}"/>
+			<input type="text" placeholder="开户行信息（公司对公账号信息）" bindinput="bindBankMsg" maxlength="30" value="{{bankMsg}}"/>
+			<view class="uploadimg" bindtap="chooseImage">
+				<text>{{hasImg? '替换营业执照' : '上传营业执照'}}</text>
+			</view>
+			<block wx:for="{{files}}" wx:key="*this">
+				<view class="preview" bindtap="previewImage" id="{{item}}">
+					<image src="{{item}}" mode="aspectFill" />
+				</view>
+			</block>
+			<view wx:if="{{needSet==1&&needShowLicenseImg}}" class="preview">
+				<image src="{{licenseImg}}" mode="aspectFill" />
+			</view>
+		</block>
+			
+		<button class="submit {{disabled? 'disabled' : ''}}" type="primary" disabled="{{disabled}}" bindtap="submitClick">提交</button>
+	</view>
+	<view class="success {{successHide == 1 ? 'hide' : ''}}" bindtap="clickSuccess">
+    <view class="successwrap">
+      <view class="sign">
+        <image src="../../images/success.png" />
+      </view>
+      <view class="successtext">
+        <text>提交成功</text>
+      </view>
+    </view>
+  </view>
+  <view class="black-shade {{shadeHide == 1 ? 'hide' : ''}}" bindtap="clickSuccess"></view>
+</view>

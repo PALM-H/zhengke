@@ -1,0 +1,13 @@
+<!--applist.wxml-->
+<view class="page">
+  <block wx:for="{{appList}}">
+    <view class="itemwrap" data-orderid="{{item.orderid}}" data-name="{{item.s_account}}" bindtap="clickItem">
+      <image class="sign" src="../../images/buy-item-black{{item.type}}.png" />
+      <text class="price">{{item.name}}</text>
+      <view class="rulewrap">
+        <text class="normai">{{item.s_account!=null?item.s_account:'未补充信息'}}</text>
+        <text class="blue">购买时间 {{item.addtime}}</text>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,23 @@
+/**cashexp.wxss**/
+.coursewrap{
+    position: relative;
+    width: 670rpx;
+    margin: 0 40rpx;
+}
+.coursewrap .title{
+    width: 100%;
+    height: 130rpx;
+    line-height: 130rpx;
+    font-size: 40rpx;
+    color: #4a4a4a;
+    font-weight: bold;
+    border-bottom: 1rpx solid #eeeeee;
+}
+.coursewrap>text{
+    display: block;
+    width: 100%;
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #4a4a4a;
+    text-align:justify;
+}

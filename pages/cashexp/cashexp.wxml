@@ -1,0 +1,12 @@
+<!--cashexp.wxml-->
+<view class="page">
+	<view class="coursewrap">
+    <view class="title">
+			<text>关于金币提现规则说明</text>
+		</view>
+		<text>1.金币提现需要绑定真实银行卡账户，否则提现失败。提现失败后金币返还对应账户，用户需根据提示信息重新提现；</text>
+		<text>2.金币提现提交申请后，将在30个工作日内到账；</text>
+		<text>3.推广期间金币提现不收取任何后续费；</text>
+		<text>4.本规则说明解释权及修订权归广州市挣客网络科技有限公司所有。</text>
+	</view>
+</view>

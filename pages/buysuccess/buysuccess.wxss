@@ -1,0 +1,78 @@
+/**buysuccess.wxss**/
+.success{
+	position: fixed;
+	width: 670rpx;
+	left: 40rpx;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.successwrap{
+	position: relative;
+	width: 100%;
+	height: 500rpx;
+}
+.signwrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 154rpx;
+	text-align: center;
+	z-index: 3;
+}
+.signwrap image{
+	width: 154rpx;
+	height: 154rpx;
+}
+.alert{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 420rpx;
+	border-radius: 10rpx;
+	background: #ffffff;
+	box-shadow: 0 0 30rpx #dee3f2;
+	z-index: 2;
+}
+.alertwrap{
+	position: relative;
+	width: 100%;
+	height: 420rpx;
+	text-align: center;
+}
+.alertwrap image{
+	position: absolute;
+	width:42rpx;
+	height: 39rpx;
+	top: 18rpx;
+	left: 160rpx;
+}
+.price{
+	display: block;
+	margin-top: 104rpx;
+	margin-left: 30rpx;
+	font-size: 48rpx;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+.tips{
+	display: block;
+	margin-top: 34rpx;
+	font-size: 30rpx;
+	color: #4a4a4a;
+}
+.viewbtn{
+	margin: 40rpx auto 0;
+	width: 284rpx;
+	height: 94rpx;
+	line-height: 94rpx;
+	text-align: center;
+	border-radius: 10rpx;
+	background: linear-gradient(to right, #0080ff , #00b6ff);
+}
+.viewbtn text{
+	font-size: 34rpx;
+	font-weight: bold;
+	color: #ffffff;
+}

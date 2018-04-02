@@ -1,0 +1,66 @@
+<!--mine.wxml-->
+<view class="page">
+  <image class="topimg" src="../../images/mine-top.png"></image>
+  <view class="headimg">
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="nickName">
+      <text>{{userInfo.nickName}}</text>
+  </view>
+  <view class="menuwrap">
+    <view class="flexwrap">
+      <view class="item" bindtap="tabClick1">
+        <view class="itemimg">
+          <image src="../../images/mine-item1.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>我的小程序</text>
+        </view>
+      </view>
+      <view class="item rightitem" bindtap="tabClick2">
+        <view class="itemimg">
+          <image src="../../images/mine-item2.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>我的金币</text>
+        </view>
+      </view>
+    </view>
+    <view class="flexwrap middlewrap">
+      <view class="item" bindtap="tabClick3">
+        <view class="itemimg">
+          <image src="../../images/mine-item3.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>我的邀请码</text>
+        </view>
+      </view>
+      <view class="item rightitem" bindtap="tabClick4">
+        <view class="itemimg">
+          <image src="../../images/mine-item4.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>我的客服</text>
+        </view>
+      </view>
+    </view>
+    <view class="flexwrap">
+      <view class="item" bindtap="tabClick5">
+        <view class="itemimg">
+          <image src="../../images/mine-item5.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>小程序使用说明</text>
+        </view>
+      </view>
+      <view class="item rightitem" bindtap="tabClick6">
+        <view class="itemimg">
+          <image src="../../images/mine-item6.png"></image>
+        </view>
+        <view class="itemtext">
+          <text>金币提现说明</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

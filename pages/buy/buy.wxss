@@ -1,0 +1,243 @@
+/**index.wxss**/
+.page{
+  overflow: hidden;
+}
+.itemwrap{
+  position: relative;
+  width: 670rpx;
+  margin: 40rpx auto;
+  border-radius: 16rpx;
+}
+.itemwrap1{
+  height: 402rpx;
+  background: linear-gradient(to top right, #0d88ff , #00b4ff);
+}
+.itemwrap2{
+  height: 460rpx;
+  background: linear-gradient(to top right, #9b37fb , #2997f7);
+}
+.itemwrap .sign{
+  position: absolute;
+  top: 57rpx;
+  left: 40rpx;
+  width: 42rpx;
+  height: 39rpx;
+}
+.itemwrap .price{
+  display: block;
+  padding-top: 40rpx;
+  margin-left: 100rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+.itemwrap .tips{
+  position: absolute;
+  width: 192rpx;
+  right: 40rpx;
+  top: 45rpx;
+  font-size: 20rpx;
+  color: #ffffff;
+}
+.rulewrap{
+  margin-left: 40rpx;
+  margin-top: 46rpx;
+  line-height:54rpx;
+}
+.rulewrap text{
+  display: block;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+
+.black-shade{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  background: #000000;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.agree{
+  position: fixed;
+  width: 670rpx;
+  height: 90vh;
+  background: #fff;
+  border-radius: 20rpx;
+  left: 50%;
+  top: 5vh; 
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.agreewrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+.agreewrap .closewrap{
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.agreewrap .closewrap image{
+  width: 28rpx;
+  height: 27rpx;
+}
+.agreewrap .titlewrap{
+  width: 100%;
+  padding-top: 80rpx;
+  text-align: center;
+}
+.agreewrap .title{
+  color: #4a4a4a;
+  font-size: 34rpx;
+}
+.agreewrap .textwrap{
+  position: relative;
+  width: 590rpx;
+  height: 700rpx;
+  line-height:50rpx;
+  margin: 46rpx auto 0;
+  justify-content: center;  
+  overflow-y: scroll;
+}
+.agreewrap .textwrap text{
+  display: block;
+  width: 100%;
+  font-size: 30rpx;
+  color: #4a4a4a;
+}
+.agreewrap .textwrap text.p1{
+  margin-top: 50rpx;
+}
+.agreewrap .textwrap text.p2{
+  margin-top: 25rpx;
+}
+.agreewrap .textwrap text.p3{
+  margin-top: 15rpx;
+}
+.agreewrap .agreebtn{
+  position: absolute;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  bottom: 0;
+  border-top: 1rpx solid #eeeeee;
+  background:#ffffff;
+  border-radius: 0 0 20rpx 20rpx;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 4;
+}
+.agreewrap .agreebtn text{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #0080ff;
+}
+.confirm,.code{
+  position: fixed;
+  width: 540rpx;
+  left: 50%;
+  top: 50%;
+  border-radius: 20rpx;
+  background: #ffffff;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+}
+.confirm .confirmwrap,.code .codewrap{
+  position: relative;
+  width: 100%;
+}
+.confirmwrap .confirm-text,.codewrap .code-text{
+  width: 100%;
+  margin-top: 44rpx;
+  text-align: center;
+}
+.confirmwrap .confirm-text text,.codewrap .code-text text{
+  font-size: 34rpx;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+.confirmwrap .confirm-tips{
+  width: 100%;
+  margin-top: 34rpx;
+  text-align: center;
+}
+.confirmwrap .confirm-tips text{
+  font-size: 30rpx;
+  color: #0080ff;
+}
+.codewrap .code-tips{
+  width: 140rpx;
+  height:40rpx;
+  margin: 34rpx auto 0;
+  border-bottom: 1rpx solid #4a4a4a;
+}
+.select{
+  width: 100%;
+  margin-top: 45rpx;
+  border-top: 1rpx solid #eeeeee;
+}
+.select .no,.select .yes{
+  height: 100rpx;
+  line-height: 100rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.select .no text,.select .yes text{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #0080ff;
+}
+.select .yes{
+  border-left: 1rpx solid #eeeeee;
+}
+.codeinput{
+  position: absolute;
+  left: 216rpx;
+  top: 68rpx;
+  word-spacing:12rpx;
+}
+
+.success{
+  position: fixed;
+  width: 540rpx;
+  left: 50%;
+  top: 50%;
+  border-radius: 20rpx;
+  padding: 64rpx 0;
+  background: #ffffff;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+}
+.success .successwrap{
+  position: relative;
+  width: 100%;
+}
+.successwrap .sign{
+  width: 100%;
+  text-align: center;
+}
+.successwrap .sign image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.successwrap .successtext{
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.successwrap .successtext text{
+  font-size: 30rpx;
+  color: #4a4a4a;
+}

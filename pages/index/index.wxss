@@ -1,0 +1,108 @@
+/**index.wxss**/
+.header{
+  position: relative;
+  width: 100%;
+  height: 240rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.logo{
+  position: absolute;
+  left: 40rpx;
+  top: 0;
+  width: 200rpx;
+  height: 200rpx;
+}
+.title{
+  position: absolute;
+  left: 272rpx;
+  top: 40rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+.subtitle{
+  position: absolute;
+  left: 272rpx;
+  top: 112rpx;
+  font-size: 34rpx;
+  color: #4a4a4a;
+}
+.attestation{
+  position: absolute;
+  left: 502rpx;
+  top: 112rpx;
+  width: 210rpx;
+  height: 50rpx;
+}
+.attestation image{
+  width: 210rpx;
+  height: 50rpx;
+}
+.attestation text{
+  font-size: 20rpx;
+  vertical-align:middle;
+}
+.tips{
+  width: 100%;
+  height: 69rpx;
+  line-height: 69rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #eeeeee;
+}
+.tips text{
+  font-size: 26rpx;
+  vertical-align:middle;
+  color: #0080FF;
+}
+.itemwrap{
+  width: 670rpx;
+  height: 50rpx;
+  padding: 36rpx 0;
+  margin: 0 auto;
+}
+.itemwrap:not(.first-item){
+  border-top: 1rpx solid #eeeeee;
+}
+
+.itemwrap .imagewrap{
+  position: relative;
+  display: inline-block;
+  width: 48rpx;
+  height: 50rpx;
+  margin-right: 24rpx;
+}
+.itemwrap .imagewrap image{
+  width: 48rpx;
+  height: 50rpx;
+}
+.itemwrap .textwrap{
+  position: relative;
+  display: inline-block;
+  width: 590rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.itemwrap .textwrap text{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #4a4a4a;
+  vertical-align:middle;
+}
+
+.ablumwrap{
+  width: 710rpx;
+  margin: 0 auto;
+  display: block;
+}
+.ablumwrap .picwrap{
+  display: inline-block;
+  width: 355rpx;
+  height: 220rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.ablumwrap .picwrap image{
+  width: 316rpx;
+  height: 220rpx;
+}

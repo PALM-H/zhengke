@@ -1,0 +1,6 @@
+//course.js
+Page({
+  data: {
+    
+  }
+})

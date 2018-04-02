@@ -1,0 +1,46 @@
+<!--news.wxml-->
+<view class="page">
+  <view  class="navbar">
+    <scroll-view class="navbar-scroll" scroll-x="true" style="width: {{tabWidth}}rpx">
+      <view id="0" class="navbar-item {{activeIndex == 0 ? 'active' : ''}}" bindtap="{{activeIndex != 0 ? 'tabClick' : ''}}">
+        <text>推荐</text>
+      </view>
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index+1}}" class="navbar-item {{activeIndex == index+1 ? 'active' : ''}}" bindtap="{{activeIndex != index+1 ? 'tabClick' : ''}}">
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="swiper-container">  
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item.cover_url}}" class="slide-image"/>
+          <view class="textwrap">
+            <text>{{item.title}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">  
+      <block wx:for="{{imgUrls}}">  
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view> 
+      </block>  
+    </view> 
+  </view> 
+  <view class="itemwrap">
+    <block wx:for="{{itemArr}}">  
+      <view class="item">
+        <view class="item-container" bindtap="itemClick" data-id="{{item.tid}}">
+          <image src="{{item.cover_url}}" class="item-image"/>
+          <!--<text class="item-title">{{item.title}}</text>-->
+          <rich-text class="item-title" nodes="{{item.title}}" bindtap="tap"></rich-text> 
+          <text class="item-user">{{item.author}}　{{item.add_time}}</text>
+        </view>
+      </view>
+    </block>  
+  </view>
+  
+</view>

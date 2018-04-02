@@ -1,0 +1,42 @@
+<!--getcash.wxml-->
+<view class="page">
+	<view class="msgwrap">
+		<text class="title">提现金额</text>
+		<input class="ip-cash" type="number" bindinput="bindNum" value="{{inputVal}}" placeholder="请输入提现金额"/>
+		<view class="flexwrap tipswrap">
+			<view class="tips">
+				<text>可用余额 {{cash}}元</text>
+			</view>
+			<view class="bluetips">
+				<text bindtap="getAll">全部提现</text>
+			</view>
+		</view>
+		<text class="title cashtitle">提现到</text>
+		<view class="flexwrap cardwrap">
+			<view class="type">
+				<text>银行卡</text>
+			</view>
+			<view class="writeinput">
+				<picker bindchange="bindPickerChange" value="{{index}}" range="{{typeArray}}">
+					<view class="picker">
+						{{cardArray[index].bank_number}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="btnwrap">
+			<button class="submit" bindtap="getcash">确定</button>
+		</view>
+	</view>
+	<view class="success {{successHide == 1 ? 'hide' : ''}}" bindtap="clickSuccess">
+    <view class="successwrap">
+      <view class="sign">
+        <image src="../../images/success.png" />
+      </view>
+      <view class="successtext">
+        <text>提现成功</text>
+      </view>
+    </view>
+  </view>
+  <view class="black-shade {{shadeHide == 1 ? 'hide' : ''}}" bindtap="clickSuccess"></view>
+</view>

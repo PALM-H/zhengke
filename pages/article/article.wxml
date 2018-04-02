@@ -1,0 +1,40 @@
+<!--article.wxml-->
+<view class="page">
+  <view class="article-wrap">
+    <view class="title">
+      <!--<text selectable>{{title}}</text>-->
+      <rich-text selectable nodes="{{title}}" bindtap="tap"></rich-text> 
+    </view>
+    <view class="user">
+      <text>{{user}}　{{time}}</text>
+    </view>
+    <view class="container">
+      <import src="../../wxParse/wxParse.wxml"/>
+
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <view class="msg">
+      <image src="{{logo}}" />
+      <text class="name">{{name}}</text>
+      <text class="phone" selectable>热线：{{phone}}</text>
+      <text class="address" selectable>地址：{{address}}</text>
+    </view>
+  </view>
+  <image class="ad-line" src="../../images/ad-line.png" />
+  <view class="ad">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item.pic}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">  
+      <block wx:for="{{imgUrls}}">  
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view> 
+      </block>  
+    </view> 
+  </view>
+  
+</view>

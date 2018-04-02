@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="header">
+    <image class="logo" src="../../images/logo.png" background-size="cover"  bindtap="clickTest"></image>
+    <text class="title">挣客小程序</text>
+    <text class="subtitle">商城平台</text>
+    <view class="attestation">
+      <!--<text>挣客认证3C服务商</text>-->
+      <image src="../../images/3c.png" />
+    </view>
+  </view>
+  <view class="tips">
+    <text>{{advert}}</text>
+  </view>
+  <view class="itemwrap flexwrap first-item">
+    <view class="imagewrap">
+      <image src="../../images/project.png"></image>
+    </view>
+    <view class="textwrap">
+      <text>{{name}}</text>
+    </view>
+  </view>
+  <view class="itemwrap flexwrap">
+    <view class="imagewrap">
+      <image src="../../images/phone.png"></image>
+    </view>
+    <view class="textwrap">
+      <text selectable bindtap="callphone">{{phone}}</text>
+    </view>
+  </view>
+  <view class="itemwrap flexwrap">
+    <view class="imagewrap">
+      <image src="../../images/location.png"></image>
+    </view>
+    <view class="textwrap">
+      <text selectable bindtap="clickToMap">{{address}}</text>
+    </view>
+  </view>
+  <view class="itemwrap flexwrap">
+    <view class="imagewrap">
+      <image src="../../images/pic.png"></image>
+    </view>
+    <view class="textwrap">
+      <text>门店照片</text>
+    </view>
+  </view>
+  <view class="ablumwrap">
+    <block wx:for="{{imgUrls}}">   
+      <view class="picwrap">
+        <image src="{{item}}"></image>
+      </view>
+    </block>  
+  </view>
+  
+</view>

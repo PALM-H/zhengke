@@ -1,0 +1,87 @@
+<!--checkmsg.wxml-->
+<view class="page">
+	<view class="msgwrap">
+		<view class="signwrap">
+			<image src="../../images/buy-item-black{{orderMsg.type}}.png" />
+    	<text class="price">{{orderMsg.goods_name}}</text>
+			<text class="state">{{orderMsg.status==3?'申请成功':'正在申请'}}</text>
+		</view>
+		<text class="youbuymsgtext">购买信息</text>
+		<view class="flexwrap">
+			<view class="type"><text>姓名</text></view>
+			<view class="msg"><text>{{orderMsg.true_name}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>电话</text></view>
+			<view class="msg"><text>{{orderMsg.contact_phone}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>邀请码</text></view>
+			<view class="msg"><text>{{orderMsg.i_code!=''?orderMsg.i_code:'未使用邀请码'}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>邮箱</text></view>
+			<view class="msg"><text>{{orderMsg.email}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>电话</text></view>
+			<view class="msg"><text>{{orderMsg.legal_phone}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>地址</text></view>
+			<view class="msg"><text>{{orderMsg.address}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>账号</text></view>
+			<view class="msg"><text>{{orderMsg.s_account}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>密码</text></view>
+			<view class="msg"><text>{{orderMsg.s_pw}}</text></view>
+		</view>
+		<block wx:if="{{orderMsg.type == 2}}">
+		<view class="flexwrap">
+			<view class="type"><text>身份证</text></view>
+			<view class="msg"><text>{{orderMsg.id_number}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>微信号</text></view>
+			<view class="msg"><text>{{orderMsg.wx_number}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>银行卡号</text></view>
+			<view class="msg"><text>{{orderMsg.bank_number}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>银行信息</text></view>
+			<view class="msg"><text>{{orderMsg.open_bank_info}}</text></view>
+		</view>
+		<view class="flexwrap">
+			<view class="type"><text>营业执照</text></view>
+			<view class="msg"></view>
+		</view>
+		<view class="previewwrap">
+			<image class="preview" src="{{orderMsg.license_url}}" mode="aspectFill"/>
+		</view>
+		</block>
+		<block wx:if="{{orderMsg.status!=3}}">
+			<button class="submit" bindtap="submitClick">修改资料</button>
+		</block>
+	</view>
+	<view class="confirm {{confirmHide == 1 ? 'hide' : ''}}">
+    <view class="confirmwrap">
+      <view class="confirm-tips">
+        <text>修改资料需要重新审核</text>
+      </view>
+      <view class="select flexwrap">
+        <view class="no" bindtap="clickcancel">
+          <text>否</text>
+        </view>
+        <view class="yes" bindtap="clicknext">
+          <text>是</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="black-shade {{shadeHide == 1 ? 'hide' : ''}}" bindtap="clickSuccess"></view>
+</view>
