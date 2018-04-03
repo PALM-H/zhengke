@@ -7,6 +7,9 @@ Page({
     userInfo: null
   },
   onLoad: function () {
+
+
+
     console.log(app.globalData.userInfo)
     if(!app.globalData.hasGetUserInfo){
       this.setData({

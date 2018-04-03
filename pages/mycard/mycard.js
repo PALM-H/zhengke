@@ -13,6 +13,7 @@ Page({
     delIndex: null
   },
   onLoad: function () {
+    console.log(123)
     wx.showLoading({
       mask: true,
     })
@@ -38,8 +39,13 @@ Page({
       }
     })
   },
+  onShow:function(){
+    this.onLoad();
+  },
   clickclose: function(e){
     var that = this;
+    console.log(e.currentTarget.dataset.delindex,6666)
+    console.log(that.data.cardData,453454)
     that.setData({
       shadeHide: 0,
       confirmHide: 0,
@@ -80,10 +86,11 @@ Page({
             confirmHide: 1,
           });
         }else {
+          that.data.cardData.splice(that.data.cardData.delIndex, 1);
           that.setData({
             successHide: 0,
             confirmHide: 1,
-            cardData: that.data.cardData.splice(that.data.cardData.delIndex,1)
+            cardData: that.data.cardData
           });
         }
         wx.hideLoading()

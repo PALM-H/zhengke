@@ -1,7 +1,6 @@
 //buy.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     uid: null,
@@ -33,7 +32,6 @@ Page({
     wx.request({
       url: 'https://www.znnkee.com/smallprogram/index.php/Home/GoodsApi/goods_list',
       success: function(res) {
-        console.log(res);
         if(res.data.code != 200) {
           wx.showModal({
             title: '登录失败',

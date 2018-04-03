@@ -20,7 +20,6 @@ App({
           withCredentials: true, //是否带上登录态信息
           lang: 'zh_CN', //返回用户信息的语言
           success: function (info) {
-            console.log(info);
             that.globalData.userInfo = info.userInfo;
 
             // var rawData = info.rawData;

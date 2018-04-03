@@ -91,8 +91,11 @@ Page({
             showCancel: false,
             success: function(sRes) {
               if (sRes.confirm) {
-                wx.redirectTo({
-                  url: '../mycard/mycard'
+                // wx.redirectTo({
+                //   url: '../mycard/mycard'
+                // })
+                wx.navigateBack({
+                  delta: 1
                 })
               }
             }
